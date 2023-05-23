@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PLAFIME</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="logo.png">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <a href=index.html class="logo" style="text-decoration:none">
+                    <h2>PLA <span class="verde">FIME</span><span></span><span class="rojo"></span></h2>
+                </a>
+                <nav>
+                    <ul>
+                    <li><a href="#Bienvenido">Inicio</a></li>
+                    <li><a href="#Conocenos">Conocenos</a></li>
+                    <li><a href="#menu">Platillos</a></li>
+                    <li><a href="#Recomendado">Recomendado</a></li>
+                    <li><a href="#Contactanos">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado" id="Bienvenido">
+                    <h2>Bienvenido!</h2>
+                    <a href="#menu" class="btn bordes"> Recetas</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="assets/gastronomia.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-nosotros contenedor"id="Conocenos">
+        <div class="texto-nosotros">
+            <p class="bienvenida">Bienvenido a</p>
+            <h1>PLAFIME</h1>
+            <p>PLAFIME es una pagina diseñada para recomendar y guiar en la preparacion de los mejores platillos Mexicanos tradicionales
+            </p>
+            <a href="#Contactanos" class="btn btn-rojo">Contactar</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img data-src="assets/img/1mexa.jpg" alt="mujer comiendo pizza">
+            </div>
+            <div class="imagenes2">
+                <img data-src="assets/img/2mexa.jpg" alt="mujeres comiendo pizza">
+                <img data-src="assets/img/3mexa.jpg" alt="plato con pasta">
+            </div>
+        </div>
+    </div>
+
+    <section class="menu contenedor" id="menu">
+        <h2 class="texto-platillos">Platillos populares</h2>
+        <div class="botones-platillos">
+            <button class="todos btn btn-verde">Todos</button>
+            <button class="ensaladas btn btn-verde">Desayuno</button>
+            <button class="pasta btn btn-verde">Comida</button>
+            <button class="pizza btn btn-verde">Cena</button>
+            <button class="postres btn btn-verde">Postres</button>
+        </div>
+        <div class="platillos">
+            <div class="platillo" data-platillo="ensalada">
+                <a href="molletes.html">
+                <img data-src="assets/img/1molletes.jpg" alt="Desayuno">
+                </a>
+                <h2>Molletes con pollo al chipotle</h2>
+                <p>Panes tipo bolillo cortado al centro de la miga y untados con frijoles refritos, pollo al chipotle gratinados con queso manchego y acompañados con rebanadas de aguacate.</p>
+                <div class="precio">
+                    <p>Desayuno</p>
+                    <button onclick="redirectToPage11()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage11() {
+                          window.location.href = "molletes.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <a href="Chilaquiles.html">
+                <img data-src="assets/img/2chilaquiles.jpg" alt="Desayuno">
+                </a>
+                <h2>Chilaquiles verdes</h2>
+                <p>Pedazos de tortilla de maíz frita, salsa verde, crema de leche, cebolla, queso blanco, y opcionalmente huevo o pollo deshebrado.</p>
+                
+                <div class="precio">
+                    <p>Desayuno</p>
+                    <button onclick="redirectToPage12()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage12() {
+                          window.location.href = "Chilaquiles.html";
+                        }
+                      </script>
+                
+
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <a href="huevos.html">
+                <img data-src="assets/img/3huevos.jpg" alt="Desayuno">
+                </a>
+                <h2>Huevos a la mexicana con chilorio</h2>
+                <p>Combinación de huevos revueltos con tomate, cebolla y chile picados y fritos .</p>
+                <br>
+                <br>
+                <br>
+                <div class="precio">
+                    <p>Desayuno</p>
+                    <button onclick="redirectToPage13()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage13() {
+                          window.location.href = "huevos.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <a href="barbacoa.html">
+                <img data-src="assets/img/barbacoab.jpg" alt="Desayuno">
+                </a>
+                <h2>Barbacoa de birria</h2>
+                <p>La birria es un potaje hecho con carne de borrego, chivo o res, tradicionalmente horneada en un hoyo en la tierra</p>
+                <br>
+                <br>
+                <div class="precio">
+                    <p>Desayuno</p>
+                    <button onclick="redirectToPage14()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage14() {
+                          window.location.href = "barbacoa.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <a href="divorciados.html">
+                <img data-src="assets/img/huevosdivorciados.jpg" alt="Desayuno">
+                </a>
+                <h2>Huevos divorciados</h2>
+                <p>Huevos servidos al estilo de los huevos rancheros, pero uno de los huevos se cubre de salsa verde y el otro de salsa roja, separados por una ‘pared’ de frijoles o chilaquiles.</p>
+                <div class="precio">
+                    <p>Desayuno</p>
+                    <button onclick="redirectToPage15()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage15() {
+                          window.location.href = "divorciados.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <a href="enchiladas.html">
+                <img data-src="assets/img/Enchiladas.jpg" alt="Desayuno">
+                </a>
+                <h2>Enchiladas verdes</h2>
+                <p>Tortilla de maíz bañada en alguna salsa, puede ir acompañada o rellena de carnes (pollo, pavo, res) o de queso. Se sirve con cebolla fresca picada o en rodajas, lechuga, crema de leche y queso.</p>
+                <div class="precio">
+                    <p>Desayuno</p>
+                    <button onclick="redirectToPage16()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage16() {
+                          window.location.href = "enchiladas.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <a href="pastor.html">
+                <img data-src="assets/img/4tacos.jpg" alt="Comida">
+                </a>
+                <h2>Tacos al pastor</h2>
+                <p>Carne adobada, asada, servida en finas rebanadas sobre pequeñas tortillas de maíz, la carne puede ser una combinación de carne de cerdo y carne de ternera o puerco.</p>
+                <div class="precio">
+                    <p>Comida</p>
+                    <button onclick="redirectToPage21()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage21() {
+                          window.location.href = "pastor.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <a href="molepoblano.html">
+                <img data-src="assets/img/5mole.jpg" alt="Comida">
+                </a>
+                <h2>Mole poblano</h2>
+                <p>Consiste principalmente en una salsa de una gran variedad de ingredientes vertida sobre piezas de pollo</p>
+                <div class="precio">
+                    <p>Comida</p>
+                    <button onclick="redirectToPage22()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage22() {
+                          window.location.href = "molepoblano.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <a href="chilenogada.html">
+                <img data-src="assets/img/6chiles.jpg" alt="Comida">
+                </a>
+                <h2>Chiles en nogada</h2>
+                <p>Chile poblano, relleno de un guisado de picadillo y frutas cubierto con crema de nuez de Castilla (nogada), hojas de perejil y granos de granada. </p>
+                <div class="precio">
+                    <p>Comida</p>
+                    <button onclick="redirectToPage23()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage23() {
+                          window.location.href = "chilenogada.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <a href="salpicon.html">
+                <img data-src="assets/img/21salpicon.jpg" alt="Comida">
+                </a>
+                <h2>Tostadas de salpicon</h2>
+                <p>Este plato típico de la cocina mexicana suele servirse frío y acompañarse con tostadas de maíz, aguacate y limones frescos.</p>
+                <div class="precio">
+                    <p>Comida</p>
+                    <button onclick="redirectToPage24()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage24() {
+                          window.location.href = "salpicon.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <a href="rajaspollo.html">
+                <img data-src="assets/img/23rajaspoblanas.jpg" alt="Comida">
+                </a>
+                <h2>Rajas poblanas cremosas con pollo</h2>
+                <p>Rajas poblanas cremosas con elote y fajitas de jugoso pollo.</p>
+                <div class="precio">
+                    <p>Comida</p>
+                    <button onclick="redirectToPage25()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage25() {
+                          window.location.href = "rajaspollo.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <a href="sopesnopal.html">
+                <img data-src="assets/img/sopesatun.jpg" alt="Comida">
+                </a>
+                <h2>Sopes de de nopal con tinga de atún</h2>
+                <p>Deliciosos y tiernos nopalitos untados con frijolitos refritos y la receta original de tinga de atún. </p>
+                <div class="precio">
+                    <p>Comida</p>
+                    <button onclick="redirectToPage26()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage26() {
+                          window.location.href = "sopesnopal.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="pizza">
+                <a href="c1birria.html">
+                <img data-src="assets/img/7birria.jpg" alt="Cena">
+                </a>
+                <h2>Birria</h2>
+                <p>Plato a base de carne de borrego originalmente (aunque también se prepara con carne de res), adobado con una preparación a base de algunos tipos de chiles, condimentos y sal.</p>
+                <div class="precio">
+                    <p>Cena</p>
+                    <button onclick="redirectToPage101()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage101() {
+                          window.location.href = "c1birria.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="pizza">
+                <a href="c2enchorizadas.html">
+                <img data-src="assets/img/8enchorizadas.jpg" alt="Cena">
+                </a>
+                <h2>Enchorizadas</h2>
+                <p>Deliciosas enchiladas rellenas de queso Oaxaca bañadas en salsa verde con chorizo.</p>
+                <div class="precio">
+                    <p>Cena</p>
+                    <button onclick="redirectToPage102()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage102() {
+                          window.location.href = "c2enchorizadas.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="pizza">
+                <a href="c3quesabirrias.html">
+                <img data-src="assets/img/9quesabirrias.jpg" alt="Cena">
+                </a>
+                <h2>Quesabirrias</h2>
+                <p>Tacos de birria bañados en salsa de chiles y especias atiborrado de queso, doraditas por fuera y suaves por dentro.</p>
+                <div class="precio">
+                    <p>Cena</p>
+                    <button onclick="redirectToPage103()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage103() {
+                          window.location.href = "c3quesabirrias.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="pizza">
+                <a href="c4pozole.html">
+                <img data-src="assets/img/20pozole.jpg" alt="Cena">
+                </a>
+                <h2>Pozole rojo</h2>
+                <p>Caldo hecho a base de una mezcla de chiles, maíz y carne de puerco. Acompáñalo con cebolla, lechuga, rábano, orégano y tostadas de maíz con crema.</p>
+                <div class="precio">
+                    <p>Cena</p>
+                    <button onclick="redirectToPage104()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage104() {
+                          window.location.href = "c4pozole.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="pizza">
+                <a href="c5azteca.html">
+                <img data-src="assets/img/21azteca.jpg" alt="Cena">
+                </a>
+                <h2>Pastel azteca</h2>
+                <p>Platillo que se prepara alternando capas de tortilla de maíz sofritas con capas de salsa de jitomate, rajas de chile poblano, granos de maíz, rajas de cebolla, crema ácida y queso Oaxaca o queso Chihuahua.</p>
+                <div class="precio">
+                    <p>Cena</p>
+                    <button onclick="redirectToPage105()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage105() {
+                          window.location.href = "c5azteca.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="pizza">
+                <a href="c6tlacoyos.html">
+                <img data-src="assets/img/23tlacoyos.jpg" alt="Cena">
+                </a>
+                <h2>Tlacoyos de chicharron</h2>
+                <p>Tortilla gruesa ovalada y larga, preparada con masa de maíz, sobre la cual se coloca, a manera de complemento, chicharron prensado</p>
+                <div class="precio">
+                    <p>Cena</p>
+                    <button onclick="redirectToPage106()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage106() {
+                          window.location.href = "c6tlacoyos.html";
+                        }
+                      </script>
+                </div>
+            </div>
+            
+            <div class="platillo" data-platillo="postre">
+                <a href="p1pastel.html">
+                <img data-src="assets/img/10pastel.jpg" alt="postre">
+            </a>
+                <h2>Pastel 3 leches</h2>
+                <p>Bizcocho bañado con tres tipos de leche: leche evaporada, crema de leche y leche condensada.</p>
+                <div class="precio">
+                    <p>Postre</p>
+                    <button onclick="redirectToPage107()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage107() {
+                          window.location.href = "p1pastel.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="postre">
+                <a href="p2arrozconleche.html">
+                <img data-src="assets/img/11arroz.jpg" alt="postre">
+                </a>
+                <h2>Arroz con leche</h2>
+                <p>Arroz cocido en leche con azúcar, canela, pasas y leche condensada.</p>
+                <div class="precio">
+                    <p>Postre</p>
+                    <button onclick="redirectToPage108()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage108() {
+                          window.location.href = "p2arrozconleche.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="postre">
+                <a href="p3capirotada.html">
+                <img data-src="assets/img/12capirotada.jpg" alt="postre">
+                </a>
+                <h2>Capirotada</h2>
+                <p>Pan tostado, o añejado hasta que se deshidrata, cortado en rodajas puestas a cocer junto con trozos de plátano, pasas, nueces, guayaba y cacahuates, cubierto con jarabe de piloncillo y queso de mesa rallado.</p>
+                <div class="precio">
+                    <p>Postre</p>
+                    <button onclick="redirectToPage109()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage109() {
+                          window.location.href = "p3capirotada.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="postre">
+                <a href="p4churros.html">
+                <img data-src="assets/img/p4churros.jpg" alt="postre">
+                </a>
+                <h2>Churros rellenos</h2>
+                <p>Masa a base de harina de trigo cocinada en aceite, pueden tener formas de bastón, en lazos o rulos y comunmente relleno chocolate como complemento</p>
+                <div class="precio">
+                    <p>Postre</p>
+                    <button onclick="redirectToPage110()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage110() {
+                          window.location.href = "p4churros.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="postre">
+                <a href="p5gorditasnata.html">
+                <img data-src="assets/img/p5gorditasdenata.jpg" alt="postre">
+                </a>
+                <h2>Gorditas de nata</h2>
+                <p>Postre mexicano hecho a base de harina de trigo, nata, azúcar y canela. Son baratas y fáciles de hacer, por solo llevar un poco de nata o crema de vaca fermentada, harina y azúcar</p>
+                <div class="precio">
+                    <p>Postre</p>
+                    <button onclick="redirectToPage111()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage111() {
+                          window.location.href = "p5gorditasnata.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+            <div class="platillo" data-platillo="postre">
+                <a href="p6jericallas.html">
+                <img data-src="assets/img/46Jericallas.webp" alt="postre">
+                </a>
+                <h2>Jericallas</h2>
+                <p>Originario de la ciudad de Guadalajara, postre que mezcla ingredientes europeos con mexicanos como leche, azúcar, huevos, canela y vainilla.</p>
+                <div class="precio">
+                    <p>Postre</p>
+                    <button onclick="redirectToPage112()"><i class="fa fa-book" aria-hidden="true"></i></button>
+                    <script>
+                        function redirectToPage112() {
+                          window.location.href = "p6jericallas.html";
+                        }
+                      </script>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="separador" id="Recomendado">
+        <div class="contenido-separador contenedor">
+            <h2>Desayuno Mexicano para empezar el día</h2>
+            <p>Empieza tu día comiendo un desayuno muy Mexicano: Chilaquiles verdes.</p>
+            <a href="Chilaquiles.html" class="btn btn-verde">Ver receta</a>
+        </div>
+    </div>
+
+    <section class="chef contenedor" >
+        <h2>Recomendación del mes</h2>
+        <div class="contenido-chef" >
+            <div class="texto-chef">
+                <h3>Tostadas de salpicón
+                </h3>
+                <p>Este plato típico de la cocina mexicana suele servirse frío y acompañarse con tostadas de maíz, aguacate y limones frescos.</p>
+                <p>&nbsp;</p>
+                <a href="salpicon.html" class="btn btn-verde">Leer receta</a>
+            </div>
+            <div class="imagen-cochinita">
+                <img data-src="assets/img/21salpicon.jpg" alt="Cochinita pibil">
+            </div>
+        </div>
+    </section>
+
+    <div class="formulario-contacto contenedor">
+
+        <div class="informacion-contacto"id="Contactanos">
+            <h3>Recomiendanos un platillo</h3>
+            <p><i class="fas fa-map-marker-alt"> Pedro de Alba SN, Niños Héroes, Ciudad Universitaria</i></p>
+            <p><i class="fas fa-envelope"></i> plafime@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i>+81123410921</p>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/plafime" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/pla_fime?igshid=MmIzYWVlNDQ5Yg==" target="_blank">
+                    <i class="fab fa-instagram-square"></i>
+                    </a>
+            </div>
+        </div>
+
+        <form class="formulario" action="https://formsubmit.co/amaroerik23@gmail.com" method="POST">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input autocomplete="off" type="text" placeholder="Nombre" id="nombre" name="nombre" required>
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellido</label>
+                <input autocomplete="off" type="text" placeholder="Apellido" id="apellidos" name="apellidos" required>
+            </div>
+
+
+            <div class="input-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" type="text" placeholder="¡Recomiendanos un platillo!" required></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input  type="submit" class="btn btn-verde" value="Enviar" onclick="validateAndSubmit()">
+            </div>
+
+            <input type="hidden" name="_next" value="https://plafime.github.io/plafime">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+
+        
+    </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>PLAFIME</h3>
+                <p>Proyecto para la Facultad de Ingenieria Mecanica y Electrica Enero-Julio 2023</p>
+            </div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        </footer>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
